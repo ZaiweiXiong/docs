@@ -1,0 +1,32 @@
+public void execute()
+  {
+   System.out.println(msg);
+  }
+
+
+set CLASSPATH=.;C:\Program Files\Java\jdk1.6.0_23\lib;C:\126SP2\Tools\apache-ant-1.8.3\lib
+
+set Path=C:\Program Files\Java\jdk1.6.0_23\bin;C:\126SP2\Tools\apache-ant-1.8.3\bin
+
+
+start test-output\index.html
+java org.testng.TestNG testng.xml
+java org.testng.TestNG -groups fast testng.xml
+D:\wrokProject\SampleTestNG>java -cp D:\wrokProject\SampleTestNG\lib\*;D:\wrokProject\SampleTestNG\bin org.testng.TestNG -groups sanity testng.xml
+
+EnuBuildNumber and LocBuildNumber tables
+
+
+<java classname="test.ant.testant"  classpath="${dest}"/>
+
+start server selenium:
+java -jar selenium-server-standalone-2.39.0.jar
+start hub:
+java -jar selenium-server-standalone-2.39.0.jar -role hub
+Register node:
+java -jar selenium-server-standalone-2.39.0.jar -port 4001 -role node -hub http://155.35.75.194:4444/grid/register
+java -jar selenium-server-standalone-2.39.0.jar -port 4002 -role node -hub http://155.35.75.194:4444/grid/register
+
+E:\selenium server>java -jar selenium-server-standalone-2.39.0.jar -port 4003 -role node -browser browserName=internet explorer,maxInstances=2 -hub http://155.35.75.194:4444/grid/register
+E:\selenium server>java -jar selenium-server-standalone-2.39.0.jar -port 4003 -role node -broswer platform=XP,broswerName=internet explorer,maxInstances=2 -hub http://155.35.75.194:4444/grid/register
+http://localhost:4444/console
