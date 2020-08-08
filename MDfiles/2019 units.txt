@@ -1,0 +1,94 @@
+300597_19-AUT_ONLN_O
+Master Project 1/Parramatta City Campus-Macquarie Street	- DAY
+1.00 wed
+PS-EE.G.19 (Auditorium)
+
+301004_19-AUT_ONLN_O
+Research Preparation in PG Studies/Parramatta Campus - Victoria Road	
+12:00 mon
+PS-EA.LG.27 (CL)
+
+301045_19-AUT_PARR_E
+Adv Topics in User System Interaction/ Parramatta Campus - Victoria Road	- EVENING	  
+PS-EB.1.30 (SCEM)  wed 18:00
+PS-EE.G.19 (Auditorium) wed 15:00
+
+
+300770.3	Software Testing and Automation
+301163.1	Modern Software Architectures
+
+Advanced Topics in ICT
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300694.3
+
+Programming for Data Science
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301113.1
+
+
+///
+Web Engineering
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300443.2
+
+IT Project Management
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300260.2
+
+Big Data
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301046.1
+
+301112	Visualisation
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301112.2
+
+
+
+
+
+http://www.sohu.com/a/223386362_825423
+
+
+
+download youtube video
+https://en.savefrom.net/
+
+
+The importance of user experience testing in software product
+
+https://www.testwo.com/blog/7292
+https://www.xzbu.com/8/view-1078082.htm
+https://www.xzbu.com/7/view-3732979.htm
+https://www.xzbu.com/8/view-8656371.htm
+https://www.xzbu.com/9/view-4385617.htm
+https://www.xzbu.com/7/view-13913747.htm
+
+https://www.hindawi.com/journals/misy/2016/1740129/
+
+https://www.hindawi.com/journals/misy/2018/2056290/
+
+//
+Software security and testing
+http://waset.org/publications/13580
+https://ieeexplore.ieee.org/document/1423967ß
+https://trs.jpl.nasa.gov/bitstream/handle/2014/7141/03-0767.pdf?sequence=1
+https://www.researchgate.net/profile/Balsam_Mustafa/publication/264787129_Software_Engineering_Challenges_in_Multi_Platform_Mobile_Application_Development/links/53f062050cf26b9b7dce0521.pdf
+Software UX - security mobile app
+http://www.woshipm.com/evaluating/1347290.html
+https://whatis.techtarget.com/definition/mobile-app-security
+https://ieeexplore.ieee.org/abstract/document/6693235
+https://s3.amazonaws.com/academia.edu.documents/37825626/Forrester_Best_Prac_In_User_Exp.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1553916452&Signature=o4mWkUfxm9V71EkZWMRM%2FasW2s8%3D&response-content-disposition=inline%3B%20filename%3DBest_Practices_In_User_Experience_UX_Des.pdf
+//
+https://www.smashingmagazine.com/2015/02/designing-digital-technology-for-the-elderly/
+https://www.hyperlinkinfosystem.com/blog/taking-older-people-into-consideration-while-designing-ui
+https://www.xzbu.com/8/view-8732200.htm
+https://pdfs.semanticscholar.org/da31/3d372e28f403fcb64b8eb058e4dd344ad55e.pdf?_ga=2.264826248.688606064.1554248329-1025411481.1554248329
+https://www.xzbu.com/8/view-7870585.htm
+
+
+
+//
+justinMinder
+https://www.justinmind.com/support/start-prototyping-web-and-mobile-apps/
+
+https://www.justinmind.com/support/exercises-variables/
+
+email:
+19465685@student.westernsydney.edu.au
+
+

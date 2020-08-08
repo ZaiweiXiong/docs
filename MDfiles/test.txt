@@ -1,0 +1,40 @@
+https://www.my.commbank.com.au/netbank/Logon/Logon.aspx
+https://libraries.nsi.tafensw.edu.au/tafelynda    tafe lynda/ Xiong.Zaiwei
+https://www.youtube.com/watch?v=M-iAXz8vs48&list=PLhW3qG5bs-L-zox1h3eIL7CZh5zJmci4c jmeter
+https://www.w3schools.com/python/python_lists.asp python
+https://www.youtube.com/watch?v=tfq9FlkyaUM&list=PL6tu16kXT9Pp3wrsaYyNRnK1QkvVv6qdI
+19465685@student.westernsydney.edu.au
+https://brendanforster.com/notes/fixing-invalid-git-paths-on-windows/
+git checkout branch branchName
+git add *
+git commit -m ""
+git push origin master
+git reset --hard
+//
+Mac OS
+https://ianlunn.co.uk/articles/quickly-showhide-hidden-files-mac-os-x-mavericks/
+CMD+SHIFT+. / show/hide Files
+find /Users/zaiweixiong/ -type f -name "testng-6.8.jar"
+
+
+http://qaquestions.net/
+
+http://dummy.restapiexample.com/
+
+Data engineer: 
+https://blog.csdn.net/GitChat/article/details/78341484
+
+Cloud
+https://www.youtube.com/watch?v=HWbc8DZeNAI
+
+https://www.youtube.com/watch?v=JG9Mzf3hMRk
+
+https://www.youtube.com/watch?v=JG9Mzf3hMRk
+
+https://www.youtube.com/watch?v=56deeV6b2r8
+
+https://www.youtube.com/watch?v=ZgizTisGq4o&list=PLRMhRP6Z9GjSDiXXi01yr9vdx1l1MUD5O
+
+Sample paper and Security in Design:
+https://www.linkedin.com/learning/learning-the-owasp-top-10/welcome?autoplay=true&amp;u=51101937
+

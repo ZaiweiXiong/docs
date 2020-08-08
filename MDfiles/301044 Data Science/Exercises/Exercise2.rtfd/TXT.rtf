@@ -1,0 +1,640 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fnil\fcharset0 Geneva;\f1\froman\fcharset0 Times-Roman;\f2\fnil\fcharset134 PingFangSC-Regular;
+\f3\fswiss\fcharset0 Helvetica;\f4\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue233;\red109\green111\blue3;
+\red255\green255\blue255;\red0\green0\blue233;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c93333;\cssrgb\c50196\c50196\c0;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c93333;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid1\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid101\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid201\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid301\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid401\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid501\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid601\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid7}
+{\list\listtemplateid8\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat0\levelspace360\levelindent0{\*\levelmarker \{none\}.}{\leveltext\leveltemplateid701\'01.;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid8}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}{\listoverride\listid8\listoverridecount0\ls8}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15420\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+Question 01\
+\
+(a) Upload the Advertising dataset and explore it. \
+       advertising <-read.csv('Advertising.csv')\
+	attach(advertising)\
+	View(advertising)\
+       names(advertising)\
+       dim(advertising)\
+\
+(b) Construct scatter plots to visualize the relationship between following variables:\
+\
+\'95 Sales and TV \'95 Sales and Radio \'95 Sales and Newspaper\
+\
+par(mfrow=c(1,3))\
+plot(Sales~TV,ylab='Sales',xlab='TV')\
+plot(Sales~Newspaper,ylab='Sales',xlab='Newspaper')\
+plot(Sales~Radio,ylab='Sales',xlab='Radio')\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \ul \ulc2 Output:\ulnone \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Rplot.jpeg \width17180 \height9960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+(c) Find the Correlation Coefficient to measure the strength of the linear relationship of Sales and TV\
+\
+cor(Sales,TV,method=c("pearson","kendall","spearman"))\
+\
+\ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 8.33.57 pm.png \width2840 \height440 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(d) Find the least square estimates of the linear model of Sales in terms of TV and give the resulting model\
+\
+model =(lm(Sales~TV))\
+summary(model)\
+\
+\ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 7.25.48 pm.png \width12800 \height8040 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+(e) Assess the accuracy of the parameter estimates\
+The formula is Y = a +Bx, so we need to assess a and B for the parameter estimates and we get the result by sumarry (model) ,and the intercept and slope is lower than Standard error \
+\
+Residual standard error: 3.259 on 198 degrees of freedom\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\sa240\partightenfactor0
+\ls1\ilvl0\cf2 Standard Error for Intercept: 0.457843 of 7.032594\
+Standard Error for Slope: 0.002691 of 0.047537\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls1\ilvl0\cf2 (f) Test the significance of the slope of the linear model \
+\
+To test the significance of the slope of the linear model, and consider the hypotheses testing:\
+\
+Assume the B1 = 0, the there is not linear relationship between X and Y , but the p-value = 2.2e-16 so < 0.05 so slope of linear model is significance and B1 != 0.\
+\
+\
+\
+(g) Plot the straight line within the scatter plot and comment \
+      \
+plot(TV,Sales,col="blue",main="Salve and TV",ylab='Sales', xlab='TV')\
+abline(lm(Sales~TV))\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls1\ilvl0\cf2 \ul Output:\ulnone \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 8.16.00 pm.png \width22400 \height8780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls2\ilvl0\cf2 \
+\
+(h) Assess the overall accuracy of the model \
+anova(model)\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls2\ilvl0\cf2 \ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 8.18.43 pm.png \width12900 \height3740 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls3\ilvl0\cf2 \
+(i) Use the model to make predictions\uc0\u8232 result <-predict(model,list(TV=c(100,101,11)))\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls3\ilvl0\cf2 \ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 8.20.34 pm.png \width6320 \height960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+Question 02\
+\
+(a) Upload the Auto Dataset and explore it.\
+\
+Auto <- read.csv('Auto.csv')\
+attach(Auto)\
+View(Auto)\
+\
+(b)  Construct scatter plots to visualize the relationship between following variables:\
+ mpg and displacement \
+ mpg and weight \
+ mpg and acceleration\
+\
+par(mfrow=c(1,3))\
+plot(mpg~displacement,ylab='mpg',xlab='displacement')\
+plot(mpg~weight,ylab='mpg',xlab='weight')\
+plot(mpg~acceleration,ylab='mpg',xlab='acceleration')\
+\
+\ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Rplot01.jpeg \width22980 \height9960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+ \
+(D) Find the correlation coefficient to measure the strength of the linear relationship of Sales and acceleration\
+cor(mpg,acceleration,method=c("pearson","kendall","spearman"))\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \ul Output:\ulnone \
+[1] 0.4222974\
+\
+(d)Find the least square estimates\
+model_auto=(lm(mpg~acceleration))\
+summary(model_auto)\
+\
+\ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 8.55.43 pm.png \width12620 \height8240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+(e)\cf2 \expnd0\expndtw0\kerning0
+Assess the accuracy of the parameter estimates\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 The formula is Y = a +Bx, so we need to assess a and B for the parameter estimates and we get the result by sumarry (model_auto) ,and the intercept and slope is lower than Standard error \
+\
+Residual standard error: 7.103 on 395 degrees of freedom\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\sa240\partightenfactor0
+\ls4\ilvl0\cf2 Standard Error for Intercept: 2.0502 of 4.8218\
+Standard Error for Slope: 0.1298 of 1.2018\
+\pard\tx566\pardeftab720\sl340\sa240\partightenfactor0
+\cf2 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl340\sa240\partightenfactor0
+\ls5\ilvl0\cf2 (f)Test the significance of the slope of the linear model\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls6\ilvl0\cf2 To test the significance of the slope of the linear model, and consider the hypotheses testing:\
+\
+Assume the B1 = 0, the there is not linear relationship between X and Y , but the p-value = 2.2e-16 so < 0.05 so slope of linear model is significance and B1 != 0.\
+\
+(g)Plot the straight line within the scatter plot and comment\
+plot(acceleration,mpg,col="blue",main=" Auto linear regulation",ylab='mpg', xlab='acceleration')\
+abline(lm(mpg~acceleration))\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Rplot02.jpeg \width22980 \height9960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls7\ilvl0\cf2 \
+(h)Assess the overall accuracy of the model\
+anova(model_auto)\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls7\ilvl0\cf2 \ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 9.11.06 pm.png \width12600 \height3720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls8\ilvl0\cf2 \
+(i) Use the model to make predictions\
+result <-predict(model_auto,data.frame(acceleration=100))\
+\pard\pardeftab720\sl280\partightenfactor0
+\ls8\ilvl0\cf2 \ul Output:\ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-06 at 9.12.50 pm.png \width2800 \height1280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://blog.csdn.net/Rango_lhl/article/details/52621200"}}{\fldrslt 
+\f1\fs24 \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 https://blog.csdn.net/Rango_lhl/article/details/52621200}}
+\f1\fs24 \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f0\fs26 \cf0 \kerning1\expnd0\expndtw0 \ulnone \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\'b7\'bd\'b2\'ee\'a3\'ba\'cc\'e5\'cf\'d6\'b5\'c4\'ca\'c7\'d2\'bb\'d7\'e9\'ca\'fd\'be\'dd\'b5\'c4\'b2\'a8\'b6\'af\'c7\'e9\'bf\'f6\'a3\'ac\'d6\'b5\'d4\'bd\'d0\'a1\'b2\'a8\'b6\'af\'d4\'bd\'d0\'a1\'a1\'a3
+\f3 \'a0\
+
+\f2 \'d0\'ad\'b7\'bd\'b2\'ee\'a3\'ba\'c1\'bd\'d6\'d6\'b2\'bb\'cd\'ac\'ca\'fd\'be\'dd\'b5\'c4\'b7\'bd\'b2\'ee\'a3\'ac\'cc\'e5\'cf\'d6\'c1\'bd\'d7\'e9\'ca\'fd\'be\'dd\'b5\'c4\'b1\'e4\'bb\'af\'c7\'f7\'ca\'c6\'c8\'e7\'ba\'ce\'a3\'ac\'d5\'fd\'d6\'b5\'b1\'e4\'bb\'af\'c7\'f7\'ca\'c6\'d2\'bb\'d6\'c2\'a3\'ac\'b8\'ba\'d6\'b5\'b1\'e4\'bb\'af\'c7\'f7\'ca\'c6\'cf\'e0\'b7\'b4\'a3\'ac
+\f3 0
+\f2 \'b2\'bb\'cf\'e0\'b9\'d8\'a1\'a3
+\f3 \'a0\
+
+\f2 \'cf\'e0\'b9\'d8\'cf\'b5\'ca\'fd\'a3\'ba\'c1\'bd\'d7\'e9\'b2\'bb\'cd\'ac\'ca\'fd\'be\'dd\'b5\'c4\'cf\'e0\'b9\'d8\'b3\'cc\'b6\'c8\'a3\'ac\'c8\'a1\'d6\'b5\'b7\'b6\'ce\'a7
+\f3 [-1
+\f2 \'a3\'ac
+\f3 1]
+\f2 \'a3\'ac\'d4\'bd\'bd\'d3\'bd\'fc\'d3\'eb
+\f3 0
+\f2 \'d4\'bd\'b2\'bb\'cf\'e0\'b9\'d8\'a3\'ac
+\f3 0
+\f2 \'ca\'b1\'c8\'b4\'b2\'bb\'d2\'e2\'ce\'b6\'d7\'c5\'c1\'bd\'d7\'e9\'ca\'fd\'be\'dd\'b6\'c0\'c1\'a2\'a3\'ac\'cf\'e0\'b9\'d8\'cf\'b5\'ca\'fd\'ca\'c7\'c1\'bd\'b8\'f6\'b1\'e4\'c1\'bf\'d6\'ae\'bc\'e4\'b5\'c4\'cf\'df\'d0\'d4\'b9\'d8\'c1\'aa\'b5\'c4\'d2\'bb\'b8\'f6\'b6\'c8\'c1\'bf\'a3\'ac\'b2\'bb\'d2\'bb\'b6\'a8\'d3\'d0\'d2\'f2\'b9\'fb\'b9\'d8\'cf\'b5\'b5\'c4\'ba\'ac\'d2\'e5\'a1\'a3\
+\
+
+\f4\fs36 Week3 Tutorial exercise\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \cb1 Question 01: Multiple Linear Regression\
+(a) Upload the data \'93Advertising.csv\'94 and explore it\
+\
+advertising <-read.csv("Advertising.csv") \
+attach(advertising)\
+names(advertising)\
+dim(advertising)\
+\
+\
+(b) Find the Covariance and Correlation Matrix of Sales, TV, Radio and Newspaper.\
+mod=lm(Sales~TV+Radio+Newspaper)\
+cov(advertising,method="pearson") #covariance\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.56.18 am.png \width10220 \height2840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 cor(advertising,method="pearson") #correlation\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.57.03 am.png \width11680 \height2860 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(c) Construct the multiple linear regression model and find the least square estimates of the model parameters.\
+mod=lm(Sales~TV+Radio+Newspaper)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.59.08 am.png \width12640 \height9700 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2  \
+(d) Test the significance of the parameters and find the resulting model to model Sales in terms of advertising modes, TV, Radio and Newspaper.\
+mod=lm(Sales~TV+Radio+Newspaper)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.02.12 pm.png \width8080 \height2700 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+TV and Radio p-values <0.05 but NewPapaer >0.05 \
+so linear relationship between Sales and TV, and Radio are significant\
+Sales and NewsPaper are not linealy related\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.00.40 pm.png \width6720 \height3220 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\
+(e) Assess the overall accuracy of the model. \
+anova(mod)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.03.26 pm.png \width13060 \height5200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(f) Calculate the predicted values and residuals \
+predict(mod)\
+mod$residuals\
+\
+\
+(g) Plot the residuals against the predicted values \
+plot(predict(mod),mod$residuals)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.05.29 pm.png \width14900 \height6300 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(h) Plot the histogram of the residuals \
+plot(hist(mod$residuals))\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.06.01 pm.png \width13820 \height6960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(i) Comment on the residual plots \
+plot(mod$residuals,main='residuals')\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.08.51 pm.png \width14300 \height5680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(j) Use the multivariate model for prediction\
+\
+predict(mod,as.data.frame(cbind (TV=50,Radio=50,Newspaper=50)))\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 12.09.56 pm.png \width13140 \height1480 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f2\fs28 \cf4 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4\fs36 \cf2 \cb1 Question 02: Non Linear Models: Use Advertising data set \
+\
+(a) Add the Interaction Term TV*Radio and test the significance of the interaction term \
+	model4=lm(Sales~TV+Radio+TV*Radio)\
+       confint(model4)\
+       \
+Output:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.46.59 am.png \width8120 \height2180 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+{{\NeXTGraphic Screen Shot 2019-08-14 at 11.50.37 am.png \width8340 \height2680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+{{\NeXTGraphic Screen Shot 2019-08-14 at 11.49.57 am.png \width4420 \height820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+(b) Give the resulting model after considering this interaction term. \
+summary(model4)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.51.48 am.png \width12660 \height9180 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 (c) Construct the Polynomial Regression Model of order 3 and test the model significance \
+model.ploy=lm(Sales~poly(TV,3))\
+anova(model.ploy)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.53.17 am.png \width12620 \height4620 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 (d) Give the resulting selected model\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-14 at 11.53.58 am.png \width12300 \height9840 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs28 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \
+\
+
+\f4\fs36 Week4\
+library('ISLR')\
+attach(Default)\
+View(Default)\
+names(Default)\
+plot(Default$income~Default$balance,\
+     col=default, \
+     data=Default,\
+     ylab='income',\
+     xlab='balance')\
+\
+Defcode = as.character(Default$default)\
+table(Defcode)\
+\
+Defcode[Defcode=="No"]=0\
+Defcode[Defcode=="Yes"]=1\
+table(Defcode)\
+\
+Defcode = as.numeric(Defcode)\
+class(Defcode)\
+\
+model1=lm(Defcode~balance)\
+summary(model1)\
+\
+\
+plot(balance,Defcode,\
+     ylab= "Probability of Default",xlab= "Balance")\
+abline(a= -7.519e-02, b=1.299e-04)\
+\
+model.2= glm(Defcode~balance,data=Default,family=binomial)\
+summary.glm(model.2)\
+\
+model.3= glm(Defcode~student,data=Default,family=binomial)\
+summary.glm(model.3)\
+\
+model.4=glm(Defcode~student+balance+income, data=Default, family=binomial)\
+summary(model.4)\
+\
+model.heart = glm(AHD~heart$X+heart$Age+heart$Sex,data=heart,family =binomial)\
+summary(model.heart)\
+anova(model.heart)\
+\
+attach(Smarket)\
+View(Smarket)\
+plot(Default$income~Default$balance)\
+\
+\
+Directio.code = as.character(Smarket$Direction)\
+table(Directio.code)\
+\
+Directio.code[Directio.code=="Up"]=1\
+Directio.code[Directio.code=="Down"]=0\
+table(Directio.code)\
+\
+Directio.code = as.numeric(Directio.code)\
+\
+model.smarket = glm(  Directio.code~Smarket$Lag1+\
+                      Smarket$Lag2+Smarket$Lag3+\
+                      Smarket$Lag4+Smarket$Lag5+\
+                      Smarket$Volume,\
+                      data = Smarket,\
+                      family=binomial)\
+summary(model.smarket)\
+\
+boxplot(Lag1~Directio.code, data=Default,\
+        ylab= "Lag1", xlab= "DirectioCode")\
+\
+\
+Week4 Tutorial exercise\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \cb1 1. Start R studio.Upload following data set \'93Smarket\'94 and View the data sets using the Console\
+\
+library('ISLR')\
+attach(Smarket)\
+View(Smarket)\
+names(Smarket)\
+\
+2. Plot Income verses Balance \
+\
+plot(Default$income~Default$balance)\
+Output:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-22 at 11.11.31 am.png \width12700 \height6600 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+3. Construct the Multiple Linear Logistic Model for Direction in terms of the Predictors Lag1, Lag2, Lag3, Lag4, Lag5 and Volume. \
+\
+Directio.code = as.numeric(Directio.code)\
+\
+model.smarket = glm(  Directio.code~Smarket$Lag1+\
+                      Smarket$Lag2+Smarket$Lag3+\
+                      Smarket$Lag4+Smarket$Lag5+\
+                      Smarket$Volume,\
+                      data = Smarket,\
+                      family=binomial)\
+summary(model.smarket)\
+Output:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-22 at 11.14.23 am.png \width14340 \height8660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl320\partightenfactor0
+\cf4 \cb5 Week4 Tutorial exercise\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \cb1 1. Start R studio.Upload following data set \'93Smarket\'94 and View the data sets using the Console\
+\
+library('ISLR')\
+attach(Smarket)\
+View(Smarket)\
+names(Smarket)\
+\
+2. Plot Income verses Balance \
+\
+plot(Default$income~Default$balance)\
+Output:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-22 at 11.11.31 am.png \width12700 \height6600 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+3. Construct the Multiple Linear Logistic Model for Direction in terms of the Predictors Lag1, Lag2, Lag3, Lag4, Lag5 and Volume. \
+\
+Directio.code = as.numeric(Directio.code)\
+\
+model.smarket = glm(  Directio.code~Smarket$Lag1+\
+                      Smarket$Lag2+Smarket$Lag3+\
+                      Smarket$Lag4+Smarket$Lag5+\
+                      Smarket$Volume,\
+                      data = Smarket,\
+                      family=binomial)\
+summary(model.smarket)\
+Output:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f3\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2019-08-22 at 11.14.23 am.png \width14340 \height8660 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\fs36 \cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 \
+4. Show how you would calculate the probability (the Direction = \'93up\'94) for a given set of X (predictor) values.\
+contrasts(Direction)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl280\partightenfactor0
+\cf2 5. Construct the Misclassification Martrix\
+predict(glm_fit, type="response")\
+\
+6. Calculate the Prob (Misclassification) or Misclassification Rate 7. Calculate the False Positive rate 8. Calculate the False Negative Rate\
+\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f1 \cf2 Misclassification_Rate<-(141+457)/(145+141+457+507) Misclassification_Rate
+\fs24 \
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f4\fs36 \cf2 \
+7.Calculate the False Positive rate\
+\
+False_Positive_Rate<-(457)/(145+457) False_Positive_Rate\
+\
+8.Calculate the False Negative Rate\
+\
+False_Negative_rate<-(141)/(141+507) False_Negative_rate
+\f1\fs24 \
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f4\fs36 \cf4 \cb5 \
+Week5\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://www.youtube.com/watch?v=qbuZDQDx6zU"}}{\fldrslt 
+\f1\fs24 \cf3 \cb1 \ul \ulc3 https://www.youtube.com/watch?v=qbuZDQDx6zU}}
+\f1\fs24 \cf3 \cb1 \ul \ulc3 \
+\
+\pard\pardeftab720\sl280\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://blog.csdn.net/sinat_30399649/article/details/77033973"}}{\fldrslt \cf6 \ulc6 \outl0\strokewidth0 \strokec6 https://blog.csdn.net/sinat_30399649/article/details/77033973}}\cf6 \ulc6 \outl0\strokewidth0 \strokec6  (\cf2 \ulnone \strokec2 Decision tree\cf6 \ul \ulc6 \strokec6 )
+\f4\fs36 \cf4 \cb5 \ulnone \outl0\strokewidth0 \
+}

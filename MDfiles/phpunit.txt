@@ -1,0 +1,48 @@
+phpunit commond
+phpunit --group default C:\github\playcity\tests\Unit\Browser\testPlaycitybrand.php
+phpunit --configuration C:\github\playcity\phpunit.xml --testsuite Browser
+phpunit --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group b1
+phpunit --configuration C:\github\playcity\phpunit.xml --testsuite Browser --exclude-group default,test
+phpunit --list-groups C:\github\playcity\tests\Unit\Browser\testPlaycity.php
+
+//
+phpunit --coverage-html C:\sharefolder\webreport --whitelist C:\github\playcity\tests\Unit\Browser --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group brand
+phpunit --log-junit C:\sharefolder\webreport\test.log --whitelist C:\github\playcity\tests\Unit\Browser --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group brand
+phpunit --testdox-html C:\sharefolder\webreport\testbrand.html --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group brand,test
+phpunit --testdox-html C:\sharefolder\webreport\testbrand.html --log-junit C:\sharefolder\webreport\test.xml --reverse-list --whitelist C:\github\playcity\tests\Unit\Browser --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group brand,test
+phpunit --testdox-html C:\sharefolder\webreport\report_testplaycity.html --log-junit C:\sharefolder\webreport\test.xml --configuration C:\github\playcity\phpunit.xml --testsuite Browser --group brand,player --exclude-group default
+phpunit --testdox-html C:\sharefolder\testreport\testproviderApi.html --configuration C:\github\gmi-provider-api\phpunit.xml --testsuite APItest
+
+//
+phpunit D:\GitHub\gmi-provider-api\tests\Unit\TestPlayer.php --group credit 
+phpunit D:\GitHub\gmi-provider-api\tests\Unit\TestPlayer.php --group player
+phpunit --configuration C:\github\gmi-provider-api\phpunit.xml --testsuite APItest
+phpunit --configuration C:\github\gmi-provider-api\phpunit.xml --list-tests
+phpunit --configuration C:\github\gmi-provider-api\phpunit.xml --group playerError
+phpunit --configuration C:\github\gmi-provider-api\phpunit.xml --list-groups
+
+//
+use Illuminate\Http\Exceptions\HttpResponseException;
+use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ClientException;
+
+php codeigniter
+https://www.youtube.com/watch?v=lz5DZa7HVAQ&list=PLh89M5lS1CIATULcdS4UHx9pj3GGW8nNM&index=8
+
+full calendar
+https://www.youtube.com/watch?v=_lH9ZwAsvWM
+php access contral
+https://www.youtube.com/watch?v=pG1rOs8vz1Q
+https://www.youtube.com/watch?v=Ti0WbB7rzY0
+https://www.youtube.com/watch?v=R3o_1RSrbLs
+https://www.youtube.com/watch?v=8tgZHNBp070
+
+#https://www.cloudways.com/blog/rest-api-in-codeigniter/
+
+#web
+http://wordpress-384702-1208933.cloudwaysapps.com/Mowing/CodeIgniter/index.php/Mowing/
+
+#d3
+https://blog.csdn.net/qq_31052401/article/details/93786425
+https://www.youtube.com/watch?v=gda35eYXBJc
+https://d3js.org/

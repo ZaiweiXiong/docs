@@ -1,0 +1,52 @@
+project trello:
+https://trello.com/invite/b/hhbDEjb1/8c050b2de07c524b962122e9ee088612/gm-mc
+
+phpunit
+https://phpunit.readthedocs.io/zh_CN/latest/annotations.html#before
+https://laravel.com/api/5.2/Illuminate/Foundation/Testing/TestCase.html#method_setUp
+php
+http://php.net/manual/en/ref.array.php
+laravel test
+https://laravel.com/docs/5.6/database-testing
+laracommerce
+https://github.com/Laracommerce/laracom
+
+php command
+>composer install
+>php artisan migrate
+>php artisan migrate:refresh --seed
+>php -S localhost:8000
+>php -i | find /i "COnfiguration File"
+>phpunit --coverage-html D:\kankan\test\report --whitelist D:\wrokProject\gm-mc-sys\tests\Feature\ D:\wrokProject\gm-mc-sys\tests\
+
+git reset --hard
+
+php debug:
+echo $x
+print_r($array)
+gettype($variable)
+var_dump($variable)
+$number=99; var_dump($number);
+var_dump($array)
+get_defined_vars();
+print_r(get_defined_vars())
+debug_backtrace();
+var_dump(debug_backtrace())
+
+//
+netstat –aon
+xampp
+https://stackoverflow.com/questions/11294812/how-to-change-xampp-apache-server-port?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
+php and IIS
+https://docs.microsoft.com/en-us/iis/application-frameworks/scenario-build-a-php-website-on-iis/configuring-step-1-install-iis-and-php
+
+php artisan migrate
+
+php artisan migrate --seed
+
+https://github.com/Laracommerce/laracom
+
+https://blog.csdn.net/qq_22158031/article/details/53434696 //jmeter
+
+net user
+net Administrator /active:yes
