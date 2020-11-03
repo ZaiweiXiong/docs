@@ -4,7 +4,6 @@
 function Node(e) {
     this.e = e;
     this.next = null;
-
 }
 function LList() {
 
@@ -13,7 +12,15 @@ function LList() {
     this.insert= insert;
     this.display= display;
     this.add = add;
+    this.remove = remove;
+    this.findPrevious=findPrevious;
     this.size = 0
+}
+
+function remove(item){
+    var pre = this.findPrevious(item);
+    pre.next = pre.next.next;
+    this.size--;
 }
 
 function add(element) {
@@ -39,6 +46,15 @@ function find(item){
     }
         return curr;
 }
+function findPrevious(item){
+    var curr = this.head;
+    while ((curr.next !=null)&& (curr.next.e!=item)){
+        curr = curr.next
+    }
+    return curr
+
+}
+
 function display () {
 
     var cities ='';
@@ -69,11 +85,17 @@ function insert(newNode, item) {
 //    l.insert("Shanghai","Tianjing");
 //    l.insert("Chongqing","Shanghai");
 //    l.insert("Chengdu","Chongqing");
+
    l.add('A')
    l.add('B')
    l.add('C')
    l.display();
    console.log(l.size);
+   l.remove('B');
+   l.display();
+   console.log(l.size);
+  
+
 
 
 
