@@ -1,3 +1,4 @@
+2019 Autumn
 300597_19-AUT_ONLN_O
 Master Project 1/Parramatta City Campus-Macquarie Street	- DAY
 1.00 wed
@@ -13,18 +14,19 @@ Adv Topics in User System Interaction/ Parramatta Campus - Victoria Road	- EVENI
 PS-EB.1.30 (SCEM)  wed 18:00
 PS-EE.G.19 (Auditorium) wed 15:00
 
+2019 Spring
 
-300770.3	Software Testing and Automation
-301163.1	Modern Software Architectures
+Software Testing and Automation
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300770.4
 
-Advanced Topics in ICT
-http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300694.3
+Data Science
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301044.2
 
 Programming for Data Science
 http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301113.1
 
+2020 Autumn
 
-///
 Web Engineering
 http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300443.2
 
@@ -38,11 +40,20 @@ http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301046.1
 http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301112.2
 
 
+//***
+301163.1	Modern Software Architectures
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=301163.2
+Advanced Topics in ICT
+http://handbook.westernsydney.edu.au/hbook/unit.aspx?unit=300694.3
+//***
 
-
+// data engineer
+Graduate Certificate in Data Science
+http://handbook.westernsydney.edu.au/hbook/course.aspx?course=3751.1
+Master of Data Science
+http://handbook.westernsydney.edu.au/hbook/course.aspx?course=3735.1
 
 http://www.sohu.com/a/223386362_825423
-
 
 
 download youtube video
