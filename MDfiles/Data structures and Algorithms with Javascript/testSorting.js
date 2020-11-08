@@ -55,7 +55,7 @@ console.log("selectSort=> "+sSort(arr));
 
 function inserSort(arr){
     var n = arr.length;
-    
+
     for (var i=1;i<n;i++){
         var key = arr[i];
         var j=i-1;
@@ -66,6 +66,22 @@ function inserSort(arr){
         arr[j+1]=key;
     }
         return arr;
+}
+
+function insertionSort(arr){
+    
+    var temp, inner;
+
+    for (var outer=1;outer<=arr.length-1;outer++){
+        temp = arr[outer];
+        inner = outer;
+        while(inner>0&&arr[inner-1]>=temp){
+            arr[inner]=arr[inner-1];
+            --inner;
+        }
+        arr[inner]=temp;
+    }
+    return arr;
 }
 
 // quick sorting
@@ -91,7 +107,7 @@ function qSort(arr){
 
 function tArray(){
     var a=[]
-    for (var i=0;i<10000;i++){  
+    for (var i=0;i<100;i++){  
         a[i]=Math.floor((Math.random()*100)+1);
     }
      return a;
@@ -103,6 +119,12 @@ inserSort(tArray());
 var stop = new Date().getTime();
 var elapsed = stop - start;
 console.log('inserSort spending time..'+elapsed/1000 +' secs')
+
+start = new Date().getTime();
+insertionSort(tArray());
+stop = new Date().getTime();
+elapsed = stop - start;
+console.log('insertionSort spending time..'+elapsed/1000 +' secs')
 
 
 start = new Date().getTime();
