@@ -1,0 +1,125 @@
+Encapsulation 
+inheritance 
+polymorphism
+/*
+Overloading occurs when two or more methods in one class have the same method name but different parameters. Overriding means having two methods with the same method name and parameters (i.e., method signature). One of the methods is in the parent class and the other is in the child class.
+*/
+
+Q26. (3 marks)
+public static void powerNumber () {
+		
+		System.out.println();	
+	    Scanner scan = new Scanner(System.in);
+		System.out.print("input number 1 -> ");
+		
+		int num1 = scan.nextInt();
+		
+		
+		System.out.println("Enter the first integer: "+num1);
+		
+		
+		
+		System.out.println();	
+	    Scanner scan_ = new Scanner(System.in);
+		System.out.print("input number 2 -> ");
+		
+		int num2 = scan.nextInt();
+		
+		
+		System.out.println("Enter the second integer: "+num2);
+		
+		
+		
+		if (num2%num1==0 && num2/num1>=2 && num2/num1<=3) {
+			
+			System.out.println("Bingo");
+		}else {
+			System.out.println("Game failed");
+			
+		}
+		
+	}
+	
+	Q27. (3 marks)
+	
+	public static void calculateNumber () {
+		
+		//2×3 + 3×4 + 4×5 + ... + 98×99 + 99×100
+		int sum=0;
+		int n=2;
+		
+		while (n<=99) {
+			
+			sum+=n*(n+1);
+			n++;
+			
+		}
+		System.out.println("sum is "+sum);
+		
+		int sum_=0;
+		for (n=2;n<=99;n++) {
+			
+			sum_+=n*(n+1);
+		}
+		System.out.println("sum_ is "+sum_);
+	}
+	
+	Q28. (3 marks)
+	package com;
+
+public class User {
+	
+	private String name;
+	private int height;
+	
+	public User (String name, int height) {
+		
+		this.name = name;
+		this.height=height;
+		
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	
+	
+	public String toString () {
+		
+		
+		return this.name;
+	}
+	
+	public static void main(String[] args) {
+		
+		User user = new User ("Json",190);
+		User user_ = new User ("tony",190);
+		
+		System.out.println("name is "+user_.toString());
+		System.out.println("name is "+user.toString());
+		//set the name
+		user.setName("Musure");
+		System.out.println("name is "+user.toString());
+		user.setHeight(180);
+		System.out.println("height is "+user.getHeight());
+		
+	
+		
+		
+	}
+	
+
+}
