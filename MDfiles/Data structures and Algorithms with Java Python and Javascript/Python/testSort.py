@@ -1,12 +1,21 @@
 import pytest
 from random import randint
+import time
 #https://www.geeksforgeeks.org/insertion-sort/
 #pytest testSort.py::test_sort -s
 
 def test_sort():
     nums = generatorNumbers()
+
+    start = int(round(time.time() * 1000))
+
     print('test sort nums!=>',nums)
     print('quickSort sort=>', quickSort(nums,0,len(nums)-1))
+
+    end = int(round(time.time() * 1000))
+    elapsed  = end-start
+    print('elapsed time=>', elapsed/1000,' sec')
+
 
 def bsort(nums):
 
@@ -82,6 +91,6 @@ def partition(nums, start, end):
 
 def generatorNumbers():
     nums=[]
-    for _ in range(10):
-        nums.append(randint(0, 100))
+    for _ in range(10000):
+        nums.append(randint(0, 1000))
     return nums

@@ -1,13 +1,20 @@
+import datetime
+import time
 print('test_double_linked_list')
+#pytest testdoublelinkedlist.py::test_doublelinkedlist -s
 
 def test_doublelinkedlist():
     print('\n')
     print('double linked list!')
-
+    start = int(round(time.time() * 1000))
+    #datetime.datetime.now()
+   
+    
     dl = dList()
     # dl.insertNode('A','head')
     # dl.insertNode('B','A')
     # dl.insertNode('C','B')
+
     dl.add('A')
     dl.add('B')
     dl.add('C')
@@ -17,9 +24,14 @@ def test_doublelinkedlist():
     dl.remove('A')
     print(dl.size)
     dl.display()
-    # dl.update('D','B1')
-    # dl.display()
-    # print(dl.size)
+
+
+    end = int(round(time.time() * 1000))
+    elapsed  = end-start
+    print('elapsed time=>', elapsed/1000,' sec')
+
+   
+    
 
 
 class Node():
@@ -99,6 +111,7 @@ class dList():
               s+=curr.next.e+' '
               curr = curr.next
           print(s)
+       
 
 
 
