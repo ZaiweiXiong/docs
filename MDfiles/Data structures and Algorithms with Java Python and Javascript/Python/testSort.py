@@ -9,7 +9,7 @@ def test_sort():
 
     start = int(round(time.time() * 1000))
 
-    print('test sort nums!=>',nums)
+    #print('test sort nums!=>',nums)
     print('quickSort sort=>', quickSort(nums,0,len(nums)-1))
 
     end = int(round(time.time() * 1000))
@@ -27,7 +27,7 @@ def bsort(nums):
                 nums[j]=temp
     return nums
 
-def sSort(nums):
+def sSort_(nums):
     print('sSort!')
     for i in range(0,len(nums)-2):
         min = i
@@ -36,6 +36,16 @@ def sSort(nums):
                 temp = nums[j]
                 nums[j] = nums[min]
                 nums[min]=temp
+    return nums
+
+def sSort(nums):
+    for i in range(0,len(nums)-1):
+        min = i
+        for j in range(i+1,len(nums)):
+            if nums[j]<nums[min]:
+                temp = nums[min]
+                nums[min]=nums[j]
+                nums[j] = temp
     return nums
 
 def insertSort(nums):
@@ -91,6 +101,6 @@ def partition(nums, start, end):
 
 def generatorNumbers():
     nums=[]
-    for _ in range(10000):
+    for _ in range(10):
         nums.append(randint(0, 1000))
     return nums
