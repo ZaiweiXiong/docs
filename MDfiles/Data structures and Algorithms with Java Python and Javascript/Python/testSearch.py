@@ -64,6 +64,13 @@ def binarySearch(item,nums):
     if lowerIdex>upperIdx:
         return None
 
+def findSameNums(nums):
+
+    for i in range(0,len(nums)):
+        for j in range(i+1,len(nums)):
+            if nums[i]==nums[j]:
+                print('local is',j,'=>',nums[j])
+
 def generatorNumbers():
     nums=[]
     for _ in range(10):
