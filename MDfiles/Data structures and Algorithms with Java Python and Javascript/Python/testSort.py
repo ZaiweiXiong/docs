@@ -99,6 +99,25 @@ def partition(nums, start, end):
 
     return high
 
+def qs (nums):
+
+    p=[]
+    left=[]
+    right=[]
+    if len(nums)>1:
+        temp = nums[0]
+        for i in range(0,len(nums)):
+            if nums[i]<temp:
+                left.append(nums[i])
+            elif nums[i]==temp:
+                p.append(nums[i])
+            else:
+                right.append(nums[i])
+        return qs(left)+p+qs(right)
+    else:
+        return nums
+
+
 def generatorNumbers():
     nums=[]
     for _ in range(10):
