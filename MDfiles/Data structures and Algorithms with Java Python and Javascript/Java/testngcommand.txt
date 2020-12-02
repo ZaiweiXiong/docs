@@ -1,8 +1,11 @@
-public void execute()
-  {
-   System.out.println(msg);
-  }
 
+//https://howtodoinjava.com/testng/testng-executing-parallel-tests/
+//https://www.javatpoint.com/dynamic-array-in-java
+//https://www.geeksforgeeks.org/how-to-add-an-element-to-an-array-in-java/
+//https://www.geeksforgeeks.org/quick-sort/
+//https://www.w3schools.com/java/java_arrays.asp
+//https://www.geeksforgeeks.org/difference-between-python-and-java/
+//https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
 
 set CLASSPATH=.;C:\Program Files\Java\jdk1.6.0_23\lib;C:\126SP2\Tools\apache-ant-1.8.3\lib
 
@@ -30,3 +33,12 @@ java -jar selenium-server-standalone-2.39.0.jar -port 4002 -role node -hub http:
 E:\selenium server>java -jar selenium-server-standalone-2.39.0.jar -port 4003 -role node -browser browserName=internet explorer,maxInstances=2 -hub http://155.35.75.194:4444/grid/register
 E:\selenium server>java -jar selenium-server-standalone-2.39.0.jar -port 4003 -role node -broswer platform=XP,broswerName=internet explorer,maxInstances=2 -hub http://155.35.75.194:4444/grid/register
 http://localhost:4444/console
+
+Selenium with testing:
+Java - cp F:\Selenium\TestNg\lib** F:\bin\org testing testngxml
+
+Postman in command line:
+Newman run mycollection.json
+
+Jester in command line
+Jmeter -n -t test.jmx -l test result.jtl
