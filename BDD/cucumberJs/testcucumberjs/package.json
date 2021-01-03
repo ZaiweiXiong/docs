@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "this is test for cucumberjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js",
+    "api": "./API/chai-test.js"
+  },
+  "keywords": [
+    "auto"
+  ],
+  "author": "Jack",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chromedriver": "^87.0.4",
+    "cucumber": "^6.0.5",
+    "gulp": "^4.0.2",
+    "selenium-webdriver": "^4.0.0-alpha.8"
+  },
+  "devDependencies": {
+    "parallel-cucumber": "^1.1.0"
+  }
+}
