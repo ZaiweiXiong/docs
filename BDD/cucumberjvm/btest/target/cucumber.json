@@ -1,0 +1,304 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4121390183,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "bunning page test",
+        "description": "\nto verify serach in bunning page",
+        "id": "bunning-page;bunning-page-test",
+        "after": [
+          {
+            "result": {
+              "duration": 1322425711,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9065932401,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to bunning page",
+            "match": {
+              "location": "bunningSteps.i_go_to_bunning_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1332199052,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "type the \"paint\" for search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "paint",
+                  "offset": 10
+                }
+              ],
+              "location": "bunningSteps.type_the_for_search(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3691879619,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click search",
+            "match": {
+              "location": "bunningSteps.click_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17117336511,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The result is dispalyed",
+            "match": {
+              "location": "bunningSteps.the_result_is_dispalyed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "bunning page",
+    "description": "",
+    "id": "bunning-page",
+    "keyword": "Feature",
+    "uri": "bunn.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@bunn"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3493425331,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "search google.com",
+        "description": "to verify google search is working",
+        "id": "google-search;search-google.com",
+        "after": [
+          {
+            "result": {
+              "duration": 223099181,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1142767281,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I go to google",
+            "match": {
+              "location": "GoogleSearch.i_go_to_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 228944951,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I query for \"cucumber spring selenium\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber spring selenium",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleSearch.i_query_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1829549592,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click search",
+            "match": {
+              "location": "GoogleSearch.click_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18104875,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "google page title should become \"cucumber spring selenium - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber spring selenium - Google Search",
+                  "offset": 33
+                }
+              ],
+              "location": "GoogleSearch.google_page_title_should_become(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2619901674,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUp(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "check search suggestion",
+        "description": "to verify suggestion appeared as the user type the query",
+        "id": "google-search;check-search-suggestion",
+        "after": [
+          {
+            "result": {
+              "duration": 335555644,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 678823068,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I go to google",
+            "match": {
+              "location": "GoogleSearch.i_go_to_google()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124956299,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I query for \"test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 13
+                }
+              ],
+              "location": "GoogleSearch.i_query_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1748359554,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click search",
+            "match": {
+              "location": "GoogleSearch.click_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61727025,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "google page title should become \"test - Google Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test - Google Search",
+                  "offset": 33
+                }
+              ],
+              "location": "GoogleSearch.google_page_title_should_become(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Google Search",
+    "description": "",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "google.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]

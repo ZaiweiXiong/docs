@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="run.ui.runUiTest" duration-ms="50602" started-at="2021-02-08T03:25:25Z" finished-at="2021-02-08T03:26:16Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.ui.runUiTest@6276ae34]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="50602" started-at="2021-02-08T03:25:25Z" finished-at="2021-02-08T03:26:16Z">
+      <class name="run.ui.runUiTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:run.ui.runUiTest@6276ae34]" name="setUpClass" is-config="true" duration-ms="352" started-at="2021-02-08T03:25:25Z" finished-at="2021-02-08T03:25:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.ui.runUiTest@6276ae34]" name="feature" duration-ms="37073" started-at="2021-02-08T03:25:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-02-08T03:26:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[bunning page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:run.ui.runUiTest@6276ae34]" name="feature" duration-ms="12532" started-at="2021-02-08T03:26:03Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2021-02-08T03:26:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google Search]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:run.ui.runUiTest@6276ae34]" name="tearDownClass" is-config="true" duration-ms="512" started-at="2021-02-08T03:26:15Z" finished-at="2021-02-08T03:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- run.ui.runUiTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- run.ui.runUiTest -->
+</testng-results>
