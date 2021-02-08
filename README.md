@@ -20,6 +20,7 @@
 * [mvnrepository](https://mvnrepository.com/)
 * [cucumber.io](https://cucumber.io/docs/guides/parallel-execution/) 
 * [cucumber.parallel](https://cucumber.io/blog/open-source/announcing-cucumber-jvm-4-0-0/)
+* [maven](https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html)
 * ![Alt text]("https://images.app.goo.gl/EbicUr1ZDRLHKrnx9")\
 
 # paragrahps
