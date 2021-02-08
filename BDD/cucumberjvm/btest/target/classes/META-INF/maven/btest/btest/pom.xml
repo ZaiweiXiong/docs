@@ -27,7 +27,7 @@
 						<source>1.8</source>
 						<target>1.8</target>
 						<fork>true</fork>
-						<!--<executable>C:\Program Files\Java\jdk1.8.0_121\bin\javac.exe</executable>-->
+						<!--<executable>-->
 						<executable>/Library/Java/JavaVirtualMachines/jdk-15.0.2.jdk/Contents/Home/bin/javac</executable>
 					</configuration>
 				</plugin>
@@ -96,11 +96,14 @@
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm-deps -->
 		
-		<dependency>
-    		<groupId>io.cucumber</groupId>
-    			<artifactId>cucumber-jvm-deps</artifactId>
-   			 <version>1.0.6</version>
-		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm-deps</artifactId>
+    <version>1.0.6</version>
+    <scope>provided</scope>
+</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
 		<dependency>

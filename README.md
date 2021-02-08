@@ -17,6 +17,9 @@
 * [Basic Git commands](https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html)
 * [cucumberjvm](https://www.youtube.com/watch?v=jRihi74zJFw)
 * [cucumberjvm git](https://github.com/akashdktyagi/AutoFratCommonLib)
+* [mvnrepository](https://mvnrepository.com/)
+* [cucumber.io](https://cucumber.io/docs/guides/parallel-execution/) 
+* [cucumber.parallel](https://cucumber.io/blog/open-source/announcing-cucumber-jvm-4-0-0/)
 * ![Alt text]("https://images.app.goo.gl/EbicUr1ZDRLHKrnx9")\
 
 # paragrahps
