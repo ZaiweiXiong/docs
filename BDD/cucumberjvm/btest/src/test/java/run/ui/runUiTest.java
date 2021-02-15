@@ -10,7 +10,7 @@ glue={"stepdefinations","base"},
 plugin= {"pretty","html:target/cucumber",
 		"json:target/cucumber.json",
 		 "com.cucumber.listener.ExtentCucumberFormatter:target/report.html"},
-tags ={"@bunn,@web"}  //@web,@nab,@bunn,@post,{"@web,@bunn"}
+tags ={"@admin"}  //@web,@nab,@bunn,@post,{"@web,@bunn"}
 )
 
 public class runUiTest extends AbstractTestNGCucumberTests{

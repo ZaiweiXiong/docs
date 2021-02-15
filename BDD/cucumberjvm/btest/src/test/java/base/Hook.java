@@ -20,7 +20,7 @@ static String driverPath = "./drivers/";
     Scenario scenario;
 
 
-	@Before ("@web,@nab,@bunn,@post")
+	@Before ("@web,@nab,@bunn,@post,@admin")
 	
 	public void setUp(Scenario s)
 	{
