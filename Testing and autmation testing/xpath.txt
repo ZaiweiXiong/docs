@@ -1,0 +1,27 @@
+//td[text()='platform UIS 001']//following::/A[text()='Upload Screenshots']
+
+//td[text()='platform UIS 001']/following::a[1]
+
+//table[8]//td[text()='platform UIS 001']/following-sibling::td[3]/a[1]
+
+//td[text()='platform UIS 001']/parent::tr[1]/td[6]/a[text()='Upload Screenshots']
+//td[text()='platform UIS loc']/parent::tr[1]/td[7]/a[text()='Upload Screenshots']
+//td[text()='platform UIS 001']/parent::tr[1]/td/a[text()='Upload Screenshots']
+//td[text()='ENU BUILD4']/parent::tr[1]/td/a[text()='Upload Screenshots']
+List<WebElement> inputs
+: //div[contains(@class, 'article-heading')]
+//span[@id='gbqfsa']
+
+//div[starts-with(@id, 'cst')]
+
+//div[contains(@class, 'hp vasq')]. 
+
+
+new Select(driver.findElement(By.id("project"))).selectByVisibleText(projectName);
+		
+String xpathtemp = "//td[text()='%s']/parent::tr[1]/td/a[text()='Upload Screenshots']";
+String xpath ="temp";
+xpath = String.format(xpathtemp ,projectENUbuildfolder);
+		
+Thread.sleep(3000);
+List<WebElement> uploads = driver.findElements(By.xpath(xpath));
